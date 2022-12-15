@@ -1,5 +1,5 @@
 # Terminal
-Simplified Terminal
+Simplified Terminal Made in C#
 
 Commands
 * ls        [no params] - Lists information about the current Directory
