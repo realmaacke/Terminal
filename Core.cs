@@ -1,13 +1,18 @@
 ﻿using System;
+using System.CodeDom.Compiler;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Reflection.Emit;
 using System.Runtime.Remoting.Messaging;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.WebRequestMethods;
+using System.Xml.Linq;
 
 namespace Terminal
 {
@@ -130,11 +135,20 @@ namespace Terminal
 
         public void help()
         {
+
+            
+
             Console.WriteLine();
-            foreach (var txt in cmdList)
-            {
-                Console.WriteLine(txt);
-            }
+            Console.WriteLine(String.Format("{0,-6}{1,-12}{2,12}\n", "ls",      "[no params]",      "- Lists information about the current Directory"));
+            Console.WriteLine(String.Format("{0,-6}{1,-12}{2,12}\n", "mkdir",   "[name]",           "- Creates folder if it dosen't exists"));
+            Console.WriteLine(String.Format("{0,-6}{1,-12}{2,12}\n", "remove",  "[file]",           "- Creates folder if it dosen't exists"));
+            Console.WriteLine(String.Format("{0,-6}{1,-12}{2,12}\n", "cd",      "[params]",         "- Navigates through the Directory"));
+            Console.WriteLine(String.Format("{0,-6}{1,-12}{2,12}\n", "clear",   "[no params]",      "- Clears the screen"));
+            Console.WriteLine(String.Format("{0,-6}{1,-12}{2,12}\n", "quit",    "[no params]",      "- Quits the aplication"));
+            Console.WriteLine(String.Format("{0,-6}{1,-12}{2,12}\n", "run",     "[File]",           "- Run specified File with default execute behavior"));
+            Console.WriteLine(String.Format("{0,-6}{1,-12}{2,12}\n", "disks",   "[no params]",      "- Lists information about the machines Disk Drives"));
+            Console.WriteLine(String.Format("{0,-6}{1,-12}{2,12}\n", "code",    "[args]",           "- Opens VSCode with custom args"));
+            Console.WriteLine(String.Format("{0,-6}{1,-12}{2,12}\n", "help",    "[no params]",      "- Lists all commands"));
             refresh();
         }
 
