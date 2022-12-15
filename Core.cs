@@ -135,9 +135,6 @@ namespace Terminal
 
         public void help()
         {
-
-            
-
             Console.WriteLine();
             Console.WriteLine(String.Format("{0,-6}{1,-12}{2,12}\n", "ls",      "[no params]",      "- Lists information about the current Directory"));
             Console.WriteLine(String.Format("{0,-6}{1,-12}{2,12}\n", "mkdir",   "[name]",           "- Creates folder if it dosen't exists"));
