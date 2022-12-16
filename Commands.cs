@@ -85,6 +85,15 @@ namespace Terminal
                 argsDescription = "[args]"
 
             },
+
+            new Cmds
+            {
+                Name = "version",
+                Description = "Opens VSCode with custom args",
+                hasArgs = false,
+                argsDescription = "[no args]"
+
+            },
         };
 
         public struct Cmds

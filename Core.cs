@@ -9,9 +9,12 @@ namespace Terminal
     public class Core : functions
     {
         private readonly string BASEDIRR = @"C:";
-
+        private string VERSION = "1.0.0";
         public Core()
         {
+            _version = VERSION;
+
+
             Directory.SetCurrentDirectory(BASEDIRR);
             init();
             start();
@@ -94,7 +97,6 @@ namespace Terminal
             Console.WriteLine();
             Console.WriteLine(error);
             refresh();
-
         }
     }
 }

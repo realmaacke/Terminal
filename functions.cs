@@ -12,6 +12,9 @@ namespace Terminal
 {
     public class functions : Commands
     {
+        public string _version = "";
+
+
         #region execute methods
         public void exc(string function)
         {
@@ -165,10 +168,16 @@ namespace Terminal
             Process.Start("\"C:\\Users\\Marcus-PC\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\"", parameter[0]);
         }
 
-
         #endregion
 
         #region utillities
+        public void version()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Current version: " + _version);
+            Console.WriteLine();
+        }
+
         public void help()
         {
             Console.WriteLine();
