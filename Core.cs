@@ -81,7 +81,7 @@ namespace Terminal
 
         void init()
         {
-            Console.WriteLine("Marcus Terminal");
+            Console.WriteLine("Terminal" + " V" +  VERSION);
             Console.WriteLine("help - for list of commands");
             Console.WriteLine();
         }
