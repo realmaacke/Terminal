@@ -8,8 +8,8 @@ namespace Terminal
 {
     public class Core : functions
     {
-        private readonly string BASEDIRR = @"C:";
-        private string VERSION = "1.0.0";
+        private readonly string BASEDIRR = Config.BASEDIR;
+        private string VERSION = Config.Version;
         public Core()
         {
             _version = VERSION;
