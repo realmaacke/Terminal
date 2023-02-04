@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands.cs" />
+    <Compile Include="Config.cs" />
     <Compile Include="Core.cs" />
     <Compile Include="functions.cs" />
     <Compile Include="Program.cs" />
