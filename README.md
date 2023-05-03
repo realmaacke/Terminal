@@ -12,3 +12,7 @@ Commands
 * disks     [no args] - Lists information about the machines Disk Drives
 * help      [no args] - Lists all commands
 * code      [args]      - Opens VSCode with custom args
+
+
+
+Currently without a cli parser
